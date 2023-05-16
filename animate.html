@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var surImage="img1";
+var changeImages;
+function propertyad()
+{
+if(curImage=="img2")
+{
+document.images[0].src="img1.jpg";
+curImage="img1";
+}
+else
+{
+document.images[0].src="img2.jpg";
+curImage="img2";
+}
+}
+</script>
+</head>
+<body onload="var changeImages=setInterval('propertyad()',2000);">
+
+</body>
+</html>
